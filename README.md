@@ -8,7 +8,7 @@ You can chat with us [in this gitter chat room](https://gitter.im/mindfulness-at
 
 **To be completed**
 
-## Adavanced git commands
+## Advanced git commands
 
 **To be completed**
 
