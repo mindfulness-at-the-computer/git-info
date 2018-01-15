@@ -24,8 +24,8 @@ A collection of [references](#references) to commit objects and an [object datab
 
 ## references
 A string name that points to a commit. A reference also includes information about where the [commit](#commit) is located.
-For fork/clone style development the commit will be in one of three locations. 
+For fork-clone style development the commit will be in one of three locations. 
 
-1. The local clone
+1. A local clone on a developer's computer
 1. The origin repository in the cloud
-1. The upstream repository
+1. The upstream repository in the cloud
