@@ -12,7 +12,7 @@ when understood can help one master git concepts at a deeper level.
 ## object database
 
 ## repository
-A collection of [references](references) to commit objects and an [object database of](#object database) commit objects. 
+A collection of [references](#references) to commit objects and an [object database](#object database) of commit objects. 
 
 
 ## references
