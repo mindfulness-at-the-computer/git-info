@@ -4,9 +4,9 @@ A collection of resources - both custom made and links to other sites - to help 
 
 You can chat with us [in this gitter chat room](https://gitter.im/mindfulness-at-the-computer/git-info) if you want to ask questions about git, make suggestions for improvements, ask for clarifications, etc.
 
-## Common fork/clone development workflow
+## Simple edit/push/pull-request workflow for fork/clone development
 
-** To be completed **
+**To be completed**
 
 ## Special Situations 
 
@@ -21,6 +21,3 @@ You can chat with us [in this gitter chat room](https://gitter.im/mindfulness-at
 
 **To be completed**
 
-## Simple edit/push/pull-request workflow for fork/clone development
-
-**To be completed**
