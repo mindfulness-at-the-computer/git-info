@@ -8,7 +8,7 @@ when understood can help one master git concepts at a deeper level.
 ## commit
 As a noun: A single point in history of a repository. The entire history of a project is represented as a set
 of interrelated commits. Each commit is uniquely identified by a 40-character hexadecimal string which is created using
-a cryptographic hash function, also referred to has the SHA of the commit. Sometimes the SHA is abbreviated to the 
+a hash function, also referred to has the SHA of the commit. Sometimes the SHA is abbreviated to the 
 first 7 characters of the 40-character string.
 
 As a verb: The action of storing a new snapshot of the project's state in the Git history, by creating a new commit. 
@@ -19,7 +19,7 @@ An object which contains the information about a particular commit.
 ## object database
 
 ## repository
-A collection of [references](#references) to commit objects and an [object database](#object database) of commit objects. 
+A collection of [references](#references) to commit objects and an [object database](#object-database) of commit objects. 
 
 
 ## references
