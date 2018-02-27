@@ -4,9 +4,11 @@ A collection of resources - both custom made and links to other sites - to help 
 
 You can chat with us [in this gitter chat room](https://gitter.im/mindfulness-at-the-computer/git-info) if you want to ask questions about git, make suggestions for improvements, ask for clarifications, etc.
 
-## Simple edit/push/pull-request workflow for fork/clone development
+## Simple fork/clone development workflow
 
-**To be completed**
+The [fork/clone development workflow](fork-clone-workflow.md) is often used with open source projects. The 
+[git](git-glossary.md#git) source code control system and the cloud based [github](git-glossary.md#github)
+service for git repositories are used in this documentation. 
 
 ## Special Situations 
 
