@@ -9,9 +9,9 @@ workflow in which forks are not used.
 
 ## Assumptions
 1. [github](git-glosasry.md#github) is the source code control system used for the project.
-1. You have aleady created a [github account](git-glossary.md#github-account). Examples here use username `joeuser`.
+1. You have aleady created a personal [github account](git-glossary.md#github-account). Examples here use username `joeuser`.
 1. You know the github URL for the repository on which you will be working. Examples here use https://github.com/mindfulness-at-the-computer/git-info
-1. You will at least start work on the project using the command level interface to [git](git-glossary.md#git].
+1. You will at least start work on the project using the command level interface to [git](git-glossary.md#git).
 
 ## Step 1 - Create your own fork
 This step is usually performed by logging into your personal [github account](git-glossary.md#github-account).
@@ -26,7 +26,7 @@ in your [github account](git-glossary.md#github-account). The URL for your new r
 same as the URL of the organization rerpository except that the organization name in the URL is 
 replaced with your username.
 
-You can try this our using the https://github.com/mindfulness-at-the-computer/git-info repository. 
+You can try this using the https://github.com/mindfulness-at-the-computer/git-info repository. 
 Go to https://github.com/mindfulness-at-the-computer/git-info and you will see the main page for this repository.
 Click the Fork button in the upper right hand corner of the page and you will end up with your
 own version of the https://github.com/mindfulness-at-the-computer/git-info reository. If your github
