@@ -58,4 +58,4 @@ For the [fork/clone development workflow](fork-clone-workflow.md) the commit wil
 
 1. A local clone on a developer's computer
 1. The origin repository in [github](#github), which is your remote [fork](#fork)
-1. The upstream repository in [github](#github), which is the organization's remote repository
+1. The upstream repository in [github](#github), which is the main remote repository
