@@ -18,6 +18,9 @@ A fork is a copy of a repository. Forking a repository allows you to freely expe
 affecting the original project. Forks can be used to propose changes to someone else's project or as a starting
 point for your own project.
 
+Forking a repository is usually performed using the web interface for the remote hosting service (sush as [github](#github)).
+The forked remote repository maintains a connection to the remote repository from which it was forked.
+
 ## commit object
 An object which contains the information about a particular commit.
 
@@ -29,7 +32,7 @@ of the code is also a repository that can contain the full history of all change
 
 ## github
 `github` is a website and a service that maintains remote git repositories for project teams. Developers can interact with 
-these remote repositories stored in `gtihub` using the web interface. If you clone a repository to your development
+these remote repositories stored on gtihub using the web interface. If you clone a repository to your development
 machine, you can interact with the remote repository using the `git` command line interface.
 
 ## github account
