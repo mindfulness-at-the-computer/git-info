@@ -5,6 +5,13 @@ This git glossary contains definitions of terms used in this repository.
 There is another dcoument that describes a mental model of git that
 when understood can help one master git concepts at a deeper level. 
 
+## clone
+A clone of a [github](#github) repository is a local copy of a repository residing on [github](#github). git maintains
+a set of symbolc refernces to URL's for remote repositories. After the clone operation is complete, git sutomatically
+creates a symbolic reference called `origin` to the remote URL from which the repository was cloned. The git 
+command `git remote -v` lists the remote symbolic referneces that git know about along with the URL associated with
+each remote symbol.
+
 ## commit
 As a noun: A single point in history of a repository. The entire history of a project is represented as a set
 of interrelated commits. Each commit is uniquely identified by a 40-character hexadecimal string which is created using
@@ -52,7 +59,7 @@ and if approved will be merged into the organization repository.
 A collection of [references](#references) to commit objects and an [object database](#object-database) of commit objects. 
 
 
-## references
+## reference
 A string name that points to a commit. A reference also includes information about where the [commit](#commit) is located.
 For the [fork/clone development workflow](fork-clone-workflow.md) the commit will be in one of three locations. 
 
