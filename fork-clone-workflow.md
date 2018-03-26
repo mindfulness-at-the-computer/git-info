@@ -49,13 +49,18 @@ cd /opt/repos
 ```
 * Clone your fork using the `git clone` command. You can find the URL of your fork on the main [gihub](git-glossary.md#github)
 page of your fork. Click on the `Clone or download` button and a popup will show you the URL to use if you want to
-`Clone with SSH`. The SSH option is the easiest option to use but requires that you have confiured configured your
-[github](git-glossary.md#github) account with your public SSH key. As an alternative, you may select `Use HTTPS`. 
-The HTTPS option uses a different URL and will require you to supply your [github](git-glossary.md#github)
-account password each time you access your fork. The SSH option does not require you to supply your [gihub](git-glossary.md#github)
-when accessing your fork.
+`Clone with HTTPS`.
+As an alternative to SSH, you may select `Use HTTPS` to access the `Clone with HTTPS` URL. 
+The HTTPS option uses an HTTPS URL and will require you to supply your [github](git-glossary.md#github)
+account password each time you access your fork. 
+
+There is also a `Clone with SSH` option which requires that you have confiure your
+[github](git-glossary.md#github) account with your public SSH key. See [Cloning using SSH](cloning_using_ssh.md) for 
+more information on using the `Clone with SSH` option to access remote repositories.
+
+In this eaxmple, the `Clone using HTTPS` option is used.
 ```bash
-git clone git@github.com:joeuser/git-info.git
+git clone https://github.com/joeuser/git-info.git
 ```
 * After executing the `git clone` command successfully, there will be a directory containing a clone of your fork.
 ```bash
@@ -64,30 +69,30 @@ git-info
 ```
 * Change directory to the newly create reporitory directory (`git-info` in this example) to configure the local clone so that it
 knows where to find the remote repository from which your fork was created. Your git clone maintains a set of
-[references](git_glossary.md#references) to remote repositories. 
-git automatically creates the `origin` reference when the clone is created. The `git remote -v` command lists the known
-[references](git_glossary.md#references) and the values associated with each reference.
+[remote](git_glossary.md#remote) names that point to remote repositories. 
+git automatically creates the `origin` remote when the clone is created. The `git remote -v` command lists the known
+[remotes](git_glossary.md#remote) and the values associated with each remote.
 ```bash
 $ cd git-info
 $ git remote -v
-origin  git@github.com:joeuser/git-info.git (fetch)
-origin  git@github.com:joeuser/git-info.git (push)
+origin  https://github.com/joeuser/git-info.git (fetch)
+origin  https://github.com/joeuser/git-info.git (push)
 ```
-* By convention we use a reference named `upstream` to point to the remote repository from which your fork was 
-created. We need to define the `upstream` remote reference by supplying the correct URL. You can find the 
+* Following convention we use a remote named `upstream` to point to the remote repository from which your fork was 
+created. We need to define the `upstream` remote by supplying the correct URL. You can find the 
 URL of the repository from which you forked by clicking the link next to `forked from` label just below the name of your
 fork on your fork's main [github](git-glossary.md#github) page. In this example, the fork was cloned from the 
-`mindfulness-at-the-computer` main repository. Below is the git commnand used to define the `upstream` reference.
+`mindfulness-at-the-computer` main repository. Below is the git commnand used to define the `upstream` remote.
 ```bash
-$ git remote add upstream git@github.com:mindfulness-at-the-computer/git-info.git
+$ git remote add upstream https://github.com/mindfulness-at-the-computer/git-info.git
 ```
-* After defining the `upstream` reference, you should see both `origin` and `upstream` remote [references](git_glossary.md#references).
+* After defining the `upstream` remote, you should see both `origin` and `upstream` [remotes](git_glossary.md#remote).
 ```bash
 $ git remote -v
-origin  git@github.com:joeuser/git-info.git (fetch)
-origin  git@github.com:joeuser/git-info.git (push)
-upstream        git@github.com:mindfulness-at-the-computer/git-info.git (fetch)
-upstream        git@github.com:mindfulness-at-the-computer/git-info.git (push)
+origin  https://github.com/joeuser/git-info.git (fetch)
+origin  https://github.com/joeuser/git-info.git (push)
+upstream        https://github.com/mindfulness-at-the-computer/git-info.git (fetch)
+upstream        https://github.com/mindfulness-at-the-computer/git-info.git (push)
 ```
 
 ## Setup Step 3 - Run unit tests on your fork

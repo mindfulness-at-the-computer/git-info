@@ -59,10 +59,12 @@ and if approved will be merged into the organization repository.
 A collection of [references](#references) to commit objects and an [object database](#object-database) of commit objects. 
 
 
-## reference
-A string name that points to a commit. A reference also includes information about where the [commit](#commit) is located.
-For the [fork/clone development workflow](fork-clone-workflow.md) the commit will be in one of three locations. 
+## remote
+A string name that points to a repository. The value associated with a remote is the URL used to access the remote repository.
+A remote serves as a short alias for a longer URL. 
+For the [fork/clone development workflow](fork-clone-workflow.md) a repository will be in one of three locations. 
 
-1. A local clone on a developer's computer
-1. The origin repository in [github](#github), which is your remote [fork](#fork)
-1. The upstream repository in [github](#github), which is the main remote repository
+1. On your local machine. A local clone on a developer's computer
+1. In your remote fork on github. The `origin` remote points to your [fork](#fork) in [github](#github), created automatically by the 'git clone` command.
+1. In the remote organization on github.The `upstream` remote points to the main remote repository in [github](#github), manually created to point to the repository
+from which your [fork](#fork) was created.
