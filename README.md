@@ -14,6 +14,7 @@ service for git repositories are used in this documentation.
 
 * [Removing a file from the repository but keep it in your filesystem](git-rm-repo-only.md)
 * [Apply commits from one branch to another branch with cherry-pick](git-cherry-pick.md)
+* [Cleaning up history before creating a pull request](cleanup_b4_pull_request.md)
 
 ## Common git commands
 
