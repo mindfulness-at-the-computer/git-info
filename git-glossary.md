@@ -5,6 +5,26 @@ This git glossary contains definitions of terms used in this repository.
 There is another dcoument that describes a mental model of git that
 when understood can help one master git concepts at a deeper level. 
 
+## clean commit history
+A clean commit history is one where each commit is easy to understand and tells a story about how the project
+evolved. It is clear when features were added and who added them. Each commit is a solid piece of work and
+represents a milestone in the implementation of a feature or fix. 
+This clean commit history is not something that you need to think about while implementing a feature or fix.
+Rather make commits as often as makes sense to you and your work environment.
+Once the change is complete, think about what would be most useful for others to know about the change,
+compress the commits into the fewest commits needed (usually just one) and provide a good commit comment.
+There are a variety of tools one can use to clean
+up the commit history of local changes before creating a pull request to share those changes with the rest
+of the project team. The `git merge --squash` command is one the options available for cleaning up local 
+commit hsitory. The important concept is that the detailed steps (commits) that
+were made while developing a feature or fix do not have to be the same detailed steps (commits)
+shared with others.
+
+Another aspect of a clean history is a linear history free of unnecessary merge commits. It is possible
+to maintain a linear commit history by using the `git rebase` command on local changes before 
+creating a pull request to share your changes with the rest of the project. See
+[Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) for more information.
+
 ## clone
 A clone of a [github](#github) repository is a local copy of a repository residing on [github](#github). git maintains
 a set of symbolc refernces to URL's for remote repositories. After the clone operation is complete, git sutomatically

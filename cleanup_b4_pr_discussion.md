@@ -2,8 +2,8 @@
 
 It is important to realize that the frequency of and reasons for creating a commit vary from developer to
 developer. On the high commit frequency end of that spectrum we find developers using
-TDD (Test Driven Development). It is often the practice with TDD to create a commit each time a new
-test is written and the code is completed that causes this new test (and all other tests) to pass. This is 
+TDD (Test Driven Development). It is often the practice with TDD to create commits frequently,
+as tests are developed and new tests pass. This is 
 sometimes referred to as a `green light`. With TDD, you may want to create a commit to preserve the state
 of the code for each `green light`. Even developers who are not using TDD may choose to create commits often 
 in order to preserve the current state of the code. A developer may also want the added protection of committing 
@@ -23,21 +23,18 @@ can work in the `many small commits` mode to satisfy their needs and then conver
 commits into one commit before creating a pull request. The git term `squash` is used to describe 
 the process of converting many commits into one commit. We will call this `squashing commits` and it
 is one form of cleanup that a developer may want to perform before creating a pull request. The
-process of `squashing commits` is described below.
+process of `squashing commits` is described [here](cleanup_b4_pull_request.md).
 
 Another form of cleanup that may be required or a developer may choose to perform is called `rebasing`.
 The `rebasing` operation can be performed whether or not `squashing commits` is performed. The
 operations are independent. However, when both `rebasing` and `squashing commits` are performed for all
-changes to a repository the commit history is a single line where each commit represents a new feature
-or bug fix. Some projects require this straight line commit history and other projects do not.
+changes to a repository the commit history is linear where each commit represents a new feature
+or bug fix. Some projects require this type of [clean commit history](git-glossary.md#clean_commit_history)
+and other projects do not.
 
 Distrubuted source code control systems such as github have evloved to support cleaner commit histories. 
 For example, github has implemented several options for merging pull requests that provide control
-over `squashing commits` and `rebasing`. [Backto how to accomplish](cleanup_b4_pull_request.md) 
-`squashing commits` and `rebasing` before creating a pull request rather than trying to accomplish
-these operations during the merge of a pull request.
-
-
-
-
-
+over `squashing commits` and `rebasing`. However, one can create cleaner commit histories locally.
+[Here are instructions](cleanup_b4_pull_request.md) on how to accomplish `squashing commits` and `rebasing`
+locally before creating a pull request rather than trying to accomplish these operations during the
+merge of a pull request.
