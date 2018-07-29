@@ -1,3 +1,9 @@
+# IMPORTANT: git-info has moved to GitLab
+
+**https://gitlab.com/mindfulness-at-the-computer/git-info**
+
+***
+
 # git-info
 
 A collection of resources - both custom made and links to other sites - to help people understand what goes on under the hood when using git, and provide information about useful git commands.
